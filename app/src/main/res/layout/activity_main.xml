@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_above="@+id/adView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackground"
+    android:configChanges="orientation|keyboardHidden"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="405dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbout"></com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="267dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="402dp"
+        android:layout_marginBottom="248dp"
+        android:background="@color/colorButtonBackground"
+        android:text="Start / Resume Game"
+        android:textColor="@color/TextColor1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="267dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/colorButtonBackground"
+        android:text="About / How to Play"
+        android:textColor="@color/TextColor1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="394dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="369dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffeecup" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="294dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginBottom="353dp"
+        android:gravity="center"
+        android:text="Clickable Coffee Shop (Android Edition)"
+        android:textColor="@color/TextColor1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
