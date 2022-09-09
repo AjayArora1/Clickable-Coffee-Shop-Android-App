@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Clickable Coffee Shop (Android Edition)'
